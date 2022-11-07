@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style.css" rel="stylesheet" />
+
     <title>BMI Calculator</title>
   </head>
   <body>
     <h1>BMI Calculator</h1>
-    <label>Mass: </label><input /><br /><br />
-    <label>Height: </label><input /><br /><br />
-    <button type="button">Calculate BMI!</button>
+
+    Mass: <input type="number" id="mass" value="65" /><br /><br />
+
+    Height: <input type="number" id="height" value="1.75" /><br /><br />
+
+    <button type="button" onclick="calculateBMI_Dec()">
+      Calculate BMI (Declaration Function)</button
+    ><br /><br />
+
+    <button type="button" onclick="calculateBMI_Exp()">
+      Calculate BMI (Expression Function)</button
+    ><br /><br />
+
+    <button type="button" onclick="calculateBMI_Arr()">
+      Calculate BMI (Arrow Function)</button
+    ><br /><br />
+
+    Result (Function Declaration):
+    <p id="dec_message"></p>
+
+    Result (Function Expression):
+    <p id="exp_message"></p>
+
+    Result (Function Arrow):
+    <p id="arr_message"></p>
+
+    <script src="script.js"></script>
   </body>
 </html>
