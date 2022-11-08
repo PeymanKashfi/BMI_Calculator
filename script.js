@@ -1,5 +1,6 @@
 "use strict";
 
+//Function Declaration
 function calculateBMI_Dec() {
   const mass = document.getElementById("mass").value;
   const height = document.getElementById("height").value;
@@ -9,6 +10,7 @@ function calculateBMI_Dec() {
   document.getElementById("dec_message").textContent = result;
 }
 
+//Function Expression
 const calculateBMI_Exp = function () {
   const mass = document.getElementById("mass").value;
   const height = document.getElementById("height").value;
@@ -18,6 +20,7 @@ const calculateBMI_Exp = function () {
   document.getElementById("exp_message").textContent = result;
 };
 
+//Arrow Function
 const calculateBMI_Arr = () => {
   const mass = document.getElementById("mass").value;
   const height = document.getElementById("height").value;
